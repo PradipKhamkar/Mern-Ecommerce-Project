@@ -1,0 +1,203 @@
+.mainProductDiv {
+    height: 100%;
+    margin-top: 9%;
+}
+
+
+.productsHeading {
+    text-align: center;
+    font: bolder 1.8vmax "ROBOTO";
+    text-transform: uppercase;
+    padding: 10px;
+    background-color: aliceblue;
+    margin-bottom: 10px;
+}
+
+.productSection {
+    margin-top: 8%;
+    padding: 5px;
+}
+
+.productSection-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 190px;
+}
+
+.paginationBox {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 2vmax;
+    margin-top: 8px;
+}
+
+.PrivateValueLabel-label-45 {
+    font: 500 1vmax "ROBOTO";
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    background-color: white;
+}
+
+.page-item {
+
+    list-style: none;
+    transition: all 0.3s;
+    cursor: pointer;
+    padding: .8vmax;
+}
+
+.page-item:first-child {
+    border-radius: 5px 0 0 5px;
+}
+
+.page-item:last-child {
+    border-radius: 0 5px 5px 0;
+}
+
+.page-link {
+    text-decoration: none;
+    font: 300 1vmax "Roboto";
+    color: rgb(80, 80, 80);
+    transition: all 0.3s;
+    border: none;
+}
+
+.page-item:hover {
+    background-color: rgb(230, 230, 230);
+}
+
+.page-item:hover .page-link {
+    color: rgb(0, 0, 0);
+}
+
+.pageItemActive {
+    background-color: tomato;
+}
+
+.pageLinkActive {
+    color: white;
+    background-color: tomato;
+}
+
+.filterBox {
+    width: 18%;
+    position: absolute;
+    top: 15vmax;
+    left: 1.2vmax;
+    padding: 2px;
+    background-color: white;
+}
+
+.filterBox>h6 {
+    background-color: green;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 30px;
+    color: white;
+    border-radius: 3px;
+}
+
+.filterBox>p {
+    font-size: 18px;
+    text-align: center;
+}
+
+.categoryBox {
+    padding: 0%;
+    text-align: center;
+}
+
+.category-link {
+    list-style: none;
+    color: rgba(0, 0, 0, 0.61);
+    font: 400 18px "Roboto";
+    margin: 0.4vmax;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.category-link:hover {
+    color: tomato;
+}
+
+.RatingFilter {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.clearFilterBtn {
+    border: none;
+    cursor: pointer;
+    color: white;
+    transition: all 0.5s;
+    background-color: red;
+    outline: none;
+    margin: auto;
+    display: block;
+    margin-top: 10px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    width: 100%;
+
+}
+
+@media (max-width:600px) {
+    .productSection {
+        margin-top: 120px;
+    }
+
+    .mainFilter {
+        height: auto;
+    }
+
+    .filterBox {
+        width: 50%;
+        position: static;
+        margin: auto;
+    }
+
+    .filterBox>h6 {
+        margin-top: 18px;
+        color: white;
+    }
+
+    .productSection-1 {
+        margin-left: 0px;
+    }
+
+    .page-link {
+        font: 300 1.7vmax "Roboto";
+    }
+
+    .category-link {
+        font: 400 16px "Roboto";
+    }
+
+
+    .paginationBox {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        width: .5vmax;
+        margin-top: 10px;
+    }
+
+    .page-item {
+        padding: 0;
+    }
+
+    .page-link {
+        text-decoration: none;
+        font: 300 2vmax "Roboto";
+        transition: all 0.3s;
+    }
+
+}

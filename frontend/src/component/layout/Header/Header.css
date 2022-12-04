@@ -1,0 +1,160 @@
+header {
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    position: fixed;
+    background-color: transparent;
+    z-index: 10;
+}
+
+.main_header {
+    background-color: black;
+}
+
+.header_div {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    padding: 10px;
+    font-size: 14px;
+    /* background-color: #e42e45; */
+    background-color: black;
+
+}
+
+.logo {
+    text-align: center;
+    padding-top: 5px;
+
+}
+
+.logo>a>img {
+    margin-left: 8px;
+    width: 100px;
+    margin-top: 2px;
+}
+
+.logo button {
+    width: 20%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 18px;
+    padding-bottom: 2px;
+    color: white;
+}
+
+.serachbox {
+    text-align: center;
+    padding-top: 5px;
+}
+
+.serachbox input {
+    width: 80%;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    padding-left: 10px;
+    margin-left: 20px;
+    background-color: white;
+    height: 35px;
+    font-size: 12px;
+    font-weight: 600;
+    box-shadow: #f5cd4e 0px 0px 0px 1px;
+
+}
+
+.serachbox button {
+    outline: none;
+    width: 75px;
+    margin-left: -75px;
+    height: 35px;
+    font-weight: bold;
+    font-size: 12px;
+    color: black;
+    background-color: #f5cd4e;
+    border: none;
+}
+
+
+.icons {
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    padding-top: 2px;
+}
+
+.icons>div {
+    padding: 2px;
+    border-radius: 1px;
+    font-size: 12px;
+}
+
+.myaccount {
+
+    text-decoration: none;
+    padding: 3px;
+    color: white;
+    transition: all .6s;
+    font: 300 15px "ROBOTO";
+    background-color: rgba(40, 39, 39, 0.938);
+    height: 30px;
+
+}
+
+.myaccount:hover {
+    background-color: rgba(40, 39, 39, 0.938);
+}
+
+.myaccount>a>span>svg {
+    font: 300 17px "ROBOTO";
+    color: white;
+}
+
+.myCart {
+    width: 40px;
+    text-align: center;
+}
+
+.cartCount {
+    color: #e88622;
+    font: bold 15px "ROBOTO";
+}
+
+@media (max-width:600px) {
+    .header_div {
+        grid-template-columns: auto;
+    }
+
+    .logo>a>img {
+        margin-left: 8px;
+        width: 70px;
+    }
+
+    .serachbox {
+        grid-row: 2;
+        grid-column: 1/ span 2;
+        margin-top: 10px;
+    }
+
+    .serachbox input {
+        margin-left: 0px;
+        height: 30px;
+    }
+
+    .serachbox button {
+        height: 30px;
+        width: 68px;
+        margin-left: -68.2px;
+        font-size: 12px;
+    }
+
+    .leftcanvas {
+        width: 60%;
+    }
+
+    .myaccount {
+        font: 300 13px "ROBOTO";
+        border: none;
+        padding: 3px;
+    }
+}

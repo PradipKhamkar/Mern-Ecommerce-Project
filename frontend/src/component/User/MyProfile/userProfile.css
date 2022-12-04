@@ -1,0 +1,86 @@
+.userProfileContainer {
+    margin-top: 5rem;
+    height: 100%;
+}
+
+.userProfileContainer>h1 {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5px;
+    background-color: aliceblue;
+    font-size: 25px;
+}
+
+.userProfileBox {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    place-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.userProfileImageBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.userProfileImageBox>img {
+    width: 18vmax;
+    border-radius: 100%;
+    transition: all 0.5s;
+}
+
+.userProfileImageBox>img:hover {
+    transform: scale(1.05);
+}
+
+.userProfileImageBox>a {
+    border: none;
+    outline: none;
+    background-color: tomato;
+    color: white;
+    padding: 5px;
+    margin-top: 18px;
+    text-align: center;
+}
+
+.userProfileDetailsBox>div {
+    margin-top: 50px;
+}
+
+.userProfileDetailsBox>div>p {
+    color: rgba(0, 0, 0, 0.418);
+    font: 400 18px cursive;
+    margin: 0.2vmax;
+}
+
+.profileLinks {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.profileLinks>a {
+    background-color: black;
+    margin-bottom: 20px;
+    padding: 5px;
+    color: white;
+}
+
+@media (max-width:600px) {
+    .userProfileContainer {
+        margin-top: 0;
+    }
+
+    .userProfileContainer>h1 {
+        margin-top: 130px;
+        font-size: 22px;
+    }
+
+    .userProfileBox {
+        margin-top: 30px;
+        text-align: center;
+    }
+}

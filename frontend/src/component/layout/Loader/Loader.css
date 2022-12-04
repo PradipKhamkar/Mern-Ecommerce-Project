@@ -1,0 +1,17 @@
+.loader_constainer
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+   place-items: center;
+   z-index: 12;
+   font-weight: bold;
+}
+
+.loader_constainer > div
+{
+    font-weight: bold ;
+    width: 10vmin;
+    height: 10vmin;
+}

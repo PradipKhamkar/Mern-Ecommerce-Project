@@ -1,0 +1,16 @@
+.userOptionsMsg {
+    margin-right: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.userOptionAvatar>img {
+    width: 28px;
+    height: 28px;
+    border-radius: 100%;
+}
+
+.userOptionAvatar {
+    width: 25px;
+}
