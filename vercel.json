@@ -1,14 +1,27 @@
 {
-    "builds":[
-        {
-            "src" :"./backend/server.js",
-            "use":"@vercel/node"
-        }
-    ],
-    "routes":[
-        {
-            "src":"/.*",
-            "dest":"./backend/app.js"
-        }
-    ]
+  "builds": [
+    {
+      "src": "./backend/server.js",  // path to your server.js file
+      "use": "@vercel/node"
+    },
+    {
+      "src": "./frontend/build",    // path to your build folder
+      "use": "@vercel/static"
+    }
+  ],
+
+  // rewrites any request to api call with server.js
+  // now your "app.use('/some-route')" would work as normal as localhost
+  // no need to change your codes to serverless way
+
+  // also remember here "/(.*)" is not regular js regex
+  // it follows path-to-regex
+  // playground link: https://regexr.com
+
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/backend/server.js"
+    }
+  ]
 }
